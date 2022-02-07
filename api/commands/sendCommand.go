@@ -1,7 +1,6 @@
 package commands
 
 import (
-	"api/environment"
 	"bytes"
 	"fmt"
 	"github.com/Tnze/go-mc/chat"
@@ -21,9 +20,6 @@ type Command struct {
 }
 
 func NewCommandClient(apiKey string) *CommandClient {
-	if !environment.Test() {
-		log.Fatalln("You need to set API_KEY in order to access apis!")
-	}
 	return &CommandClient{apiKey}
 }
 
