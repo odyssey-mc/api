@@ -1,4 +1,4 @@
-module api
+module github.com/play-laybraid-fr/api
 
 go 1.17
 
